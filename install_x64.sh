@@ -55,3 +55,6 @@ make
 make install
 
 rm -r /tmp/phplua
+echo ";priority=20\nextension=lua.so" > /etc/php5/mods-available/lua.ini
+php5enmod lua
+service apache2 restart
